@@ -1,4 +1,5 @@
 {
+	"name": "Nether Star",
 	"disabled": true,
 	"crafting": ["wither_skeleton_skull", "wither_skeleton_skull", "wither_skeleton_skull", "soul_sand", "soul_sand", "soul_sand", "soul_sand"]
 }
