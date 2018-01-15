@@ -1,5 +1,5 @@
 {
-	"disabled": true,
 	"name": "Diamond Chestplate",
+	"disabled": true,
 	"crafting": ["diamond", "diamond", "diamond", "diamond", "diamond", "diamond", "diamond", "diamond"]
 }
