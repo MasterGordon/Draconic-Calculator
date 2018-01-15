@@ -1,0 +1,3 @@
+{
+	"crafting": ["energy_core", "energy_core_stabilizer" (4), "draconium_block" (6)]
+}

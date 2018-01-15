@@ -1,0 +1,3 @@
+{
+	"crafting": ["diamond", "diamond", "draconic_core", "golden_apple", "golden_apple", "eye_of_ender", "eye_of_ender"]
+}
