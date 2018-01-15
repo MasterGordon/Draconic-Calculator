@@ -1,3 +1,4 @@
 {
+	"name": "Energy Core Tier 3",
 	"crafting": ["energy_core", "energy_core_stabilizer" (4), "draconium_block" (26)]
 }
