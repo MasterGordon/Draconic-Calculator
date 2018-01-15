@@ -1,3 +1,4 @@
 {
+	"name": "Energy Core Tier 8",
 	"crafting": ["energy_core", "energy_core_stabilizer" (36), "draconium_block" (786), "awakened_draconium_block" (378)]
 }
