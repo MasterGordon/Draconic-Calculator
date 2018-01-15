@@ -1,5 +1,5 @@
 {
-	"disabled": true,
 	"name": "Diamond Helmet",
+	"disabled": true,
 	"crafting": ["diamond", "diamond", "diamond", "diamond", "diamond"]
 }
