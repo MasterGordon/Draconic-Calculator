@@ -1,3 +1,4 @@
 {
+	"name": "Dragon Heart",
 	"crafting": ["end_crystal","end_crystal","end_crystal","end_crystal"]
 }
