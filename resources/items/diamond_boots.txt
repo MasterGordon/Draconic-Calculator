@@ -1,6 +1,6 @@
 {
-	"disabled": true,
 	"name": "Diamond Boots",
+	"disabled": true,
 "crafting":[
 "diamond",
 "diamond",
