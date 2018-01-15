@@ -1,5 +1,5 @@
 {
 	"name": "Block of Diamond",
 	"disabled": true,
-	"crafting": ["diamond", "diamond", "diamond", "diamond", "diamond", "diamond", "diamond", "diamond", "diamond"]
+	"crafting": ["Diamond", "Diamond", "Diamond", "Diamond", "Diamond", "Diamond", "Diamond", "Diamond", "Diamond"]
 }

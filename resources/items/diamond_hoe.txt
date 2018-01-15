@@ -1,5 +1,5 @@
 {
 	"name": "Diamond Hoe",
 	"disabled": true,
-	"crafting": ["diamond", "diamond", "stick", "stick"]
+	"crafting": ["Diamond", "Diamond", "Stick", "Stick"]
 }

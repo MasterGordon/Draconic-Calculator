@@ -1,4 +1,4 @@
 {
 	"name": "Wyvern Leggings",
-	"crafting": ["diamond_leggings", "draconium_ingot", "draconium_ingot", "draconium_ingot", "draconium_ingot", "draconium_ingot", "draconium_ingot", "wyvern_core", "wyvern_energy_core"]
+	"crafting": ["Diamond_leggings", "Draconium Ingot", "Draconium Ingot", "Draconium Ingot", "Draconium Ingot", "Draconium Ingot", "Draconium Ingot", "wyvern_core", "wyvern_energy_core"]
 }

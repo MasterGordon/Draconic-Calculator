@@ -2,5 +2,5 @@
 	"name": "Glass Pane",
 	"disabled": true,
 	"count": 16,
-	"crafting": ["glass", "glass", "glass", "glass", "glass", "glass"]
+	"crafting": ["Glass", "Glass", "Glass", "Glass", "Glass", "Glass"]
 }

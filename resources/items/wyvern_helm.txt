@@ -1,4 +1,4 @@
 {
 	"name": "Wyvern Helm",
-	"crafting": ["diamond_helmet", "draconium_ingot", "draconium_ingot", "draconium_ingot", "draconium_ingot", "draconium_ingot", "draconium_ingot", "wyvern_core", "wyvern_energy_core"]
+	"crafting": ["Diamond_helmet", "Draconium Ingot", "Draconium Ingot", "Draconium Ingot", "Draconium Ingot", "Draconium Ingot", "Draconium Ingot", "wyvern_core", "wyvern_energy_core"]
 }

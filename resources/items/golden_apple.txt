@@ -1,5 +1,5 @@
 {
 	"name": "Golden Apple",
 	"disabled": true,
-	"crafting": ["apple", "gold_ingot", "gold_ingot", "gold_ingot", "gold_ingot", "gold_ingot", "gold_ingot", "gold_ingot", "gold_ingot"]
+	"crafting": ["apple", "Gold Ingot", "Gold Ingot", "Gold Ingot", "Gold Ingot", "Gold Ingot", "Gold Ingot", "Gold Ingot", "Gold Ingot"]
 }

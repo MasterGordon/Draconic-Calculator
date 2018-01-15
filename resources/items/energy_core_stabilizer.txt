@@ -1,4 +1,4 @@
 {
 	"name": "Energy Core Stabilizer",
-	"crafting": ["particle_generator", "diamond", "diamond", "diamond", "diamond"]
+	"crafting": ["particle_generator", "Diamond", "Diamond", "Diamond", "Diamond"]
 }

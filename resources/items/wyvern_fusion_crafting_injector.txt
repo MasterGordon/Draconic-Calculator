@@ -1,4 +1,4 @@
 {
 	"name": "Wyvern Fusion Crafting Injector",
-	"crafting": ["block_of_diamond", "block_of_diamond", "block_of_diamond", "block_of_diamond", "basic_fusion_crafting_injector", "wyvern_core", "wyvern_core", "wyvern_energy_core", "wyvern_energy_core" ]
+	"crafting": ["block_of_Diamond", "block_of_Diamond", "block_of_Diamond", "block_of_Diamond", "basic_fusion_crafting_injector", "wyvern_core", "wyvern_core", "wyvern_energy_core", "wyvern_energy_core" ]
 }

@@ -1,4 +1,4 @@
 {
 	"name": "Wyvern Energy Core",
-	"crafting": ["draconium_ingot", "draconium_ingot", "draconium_ingot", "draconium_ingot", "block_of_redstone", "block_of_redstone", "block_of_redstone", "block_of_redstone", "draconic_core"]
+	"crafting": ["Draconium Ingot", "Draconium Ingot", "Draconium Ingot", "Draconium Ingot", "block_of_redstone", "block_of_redstone", "block_of_redstone", "block_of_redstone", "draconic_core"]
 }

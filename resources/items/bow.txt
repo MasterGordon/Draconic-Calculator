@@ -1,5 +1,5 @@
 {
 	"name": "Bow",
 	"disabled": true,
-	"crafting": ["string", "string", "string", "stick", "stick", "stick"]
+	"crafting": ["String", "String", "String", "Stick", "Stick", "Stick"]
 }

@@ -1,4 +1,4 @@
 {
 	"name": "Bow of the Wyvern",
-	"crafting": ["bow", "draconium_ingot", "draconium_ingot", "wyvern_core", "wyvern_energy_core"]
+	"crafting": ["bow", "Draconium Ingot", "Draconium Ingot", "wyvern_core", "wyvern_energy_core"]
 }

@@ -1,5 +1,5 @@
 {
 	"name": "Diamond Shovel",
 	"disabled": true,
-	"crafting": ["diamond", "stick", "stick"]
+	"crafting": ["Diamond", "Stick", "Stick"]
 }

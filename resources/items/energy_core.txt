@@ -1,4 +1,4 @@
 {
 	"name": "Energy Core",
-	"crafting": ["draconium_ingot", "draconium_ingot", "draconium_ingot", "draconium_ingot", "draconium_ingot", "draconium_ingot", "wyvern_core", "wyvern_energy_core", "wyvern_energy_core"]
+	"crafting": ["Draconium Ingot", "Draconium Ingot", "Draconium Ingot", "Draconium Ingot", "Draconium Ingot", "Draconium Ingot", "wyvern_core", "wyvern_energy_core", "wyvern_energy_core"]
 }

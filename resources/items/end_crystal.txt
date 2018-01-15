@@ -1,4 +1,4 @@
 {
 	"name": "End Crystal",
-	"crafting": ["ghast_tear", "nether_star", "glass_pane", "glass_pane", "glass_pane", "glass_pane", "glass_pane", "glass_pane", "glass_pane" ]
+	"crafting": ["Ghast Tear", "nether_star", "glass_pane", "glass_pane", "glass_pane", "glass_pane", "glass_pane", "glass_pane", "glass_pane" ]
 }

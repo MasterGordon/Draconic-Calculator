@@ -1,4 +1,4 @@
 {
 	"name": "Chaotic Fusion Crafting Table",
-	"crafting": ["diamond", "diamond", "diamond", "diamond", "chaotic_core", "draconic_fusion_crafting_injector", "dragon_egg"]
+	"crafting": ["Diamond", "Diamond", "Diamond", "Diamond", "chaotic_core", "draconic_fusion_crafting_injector", "dragon_egg"]
 }
