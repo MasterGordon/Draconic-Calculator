@@ -1,4 +1,5 @@
 {
+	"name": "Block of Emerald",
 	"disabled": true,
 	"crafting": ["emerald", "emerald", "emerald", "emerald", "emerald", "emerald", "emerald", "emerald", "emerald"]
 }
