@@ -1,3 +1,4 @@
 {
+	"name": "Draconic Core",
 	"crafting": ["draconium_ingot", "gold_ingot", "draconium_ingot", "gold_ingot", "diamond", "gold_ingot", "draconium_ingot", "gold_ingot", "draconium_ingot"]
 }
