@@ -28,7 +28,7 @@ function loadHTML() {
 		if (!('disabled' in allItemsArray[i])){
 			$("#itemtoadd").append("<option value=\""+allItemsArray[i].id+"\">" + allItemsArray[i].name + "</option>")
 		} else {
-			console.log(allItemsArray[i].name+" disabled. Not loading")
+			//console.log(allItemsArray[i].name+" disabled. Not loading")
 		}
 	}
 }
