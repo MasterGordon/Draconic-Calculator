@@ -120,7 +120,11 @@ $( document ).ready(function() {
 function updateoutput() {
 	$("#output").empty()
 	for (var i = 0; i < requieredItems.length; i++) {
-		$("#output").append("<span id=\""+i+"\" class=\"ui-widget outputitem\">" +requieredCount[i]+"x "+requieredItems[i]+ "</span><br>")
+		if(allItems[requieredItems[i]]){
+			$("#output").append("<span id=\""+i+"\" class=\"ui-widget outputitem\">" +requieredCount[i]+"x "+allItems[requieredItems[i]].name+ "</span><br>")
+		}else{
+			$("#output").append("<span id=\""+i+"\" class=\"ui-widget outputitem\">" +requieredCount[i]+"x "+requieredItems[i]+ "</span><br>")
+		}
 	}
 	
 	$(".outputitem").click(function() {
