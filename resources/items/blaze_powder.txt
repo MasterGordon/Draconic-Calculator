@@ -1,4 +1,5 @@
 {
+	"name": "Blaze Powder",
 	"disabled": true,
 	"crafting": ["blaze_rod"]
 }
