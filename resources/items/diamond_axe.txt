@@ -1,5 +1,5 @@
 {
-	"disabled": true,
 	"name": "Diamond Axe",
+	"disabled": true,
 	"crafting": ["diamond", "diamond", "diamond", "stick", "stick"]
 }
