@@ -1,4 +1,5 @@
 {
+	"name": "Diamond Leggings",
 	"disabled": true,
 	"crafting": ["diamond", "diamond", "diamond", "diamond", "diamond", "diamond", "diamond" ]
 }
