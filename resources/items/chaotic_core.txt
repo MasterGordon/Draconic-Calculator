@@ -1,3 +1,4 @@
 {
+	"name": "Chaotic Core",
 	"crafting": ["awakened_draconium_ingot", "awakened_draconium_ingot", "awakened_draconium_ingot", "awakened_draconium_ingot", "awakened_core", "awakened_core", "awakened_core", "awakened_core", "chaos_shard"]
 }
