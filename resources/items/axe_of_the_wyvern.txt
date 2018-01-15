@@ -1,3 +1,4 @@
 {
+	"name": "Axe of the Wyvern",
 	"crafting": ["diamond_axe", "draconium_ingot", "draconium_ingot", "wyvern_core", "wyvern_energy_core"]
 }
