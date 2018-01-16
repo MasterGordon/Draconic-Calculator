@@ -1,4 +1,5 @@
 {
+	"type": "upgrades",
 	"name": "Upgrade Tier Wyvern",
 	"crafting": ["nether_star", "nether_star", "draconic_core", "draconic_core", "emerald", "emerald", "wyvern_core"]
 }

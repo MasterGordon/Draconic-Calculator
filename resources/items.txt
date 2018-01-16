@@ -65,3 +65,7 @@ wyvern_leggings
 ../energy_cores/tier_6
 ../energy_cores/tier_7
 ../energy_cores/tier_8
+../upgrades/tier_basic
+../upgrades/tier_chaotic
+../upgrades/tier_draconic
+../upgrades/tier_wyvern

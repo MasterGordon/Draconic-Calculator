@@ -1,4 +1,5 @@
 {
+	"type": "upgrades",
 	"name": "Upgrade Tier Chaotic",
 	"crafting": ["wyvern_core", "wyvern_core", "awakened_core", "awakened_core", "dragon_egg", "dragon_egg", "chaotic_core"]
 }
