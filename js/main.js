@@ -165,14 +165,22 @@ function updateoutput() {
 			requieredItems.splice(index,1)
 			for(var i=0;i<itemcount;i++){
 				for(var j=0;j<item.crafting.length;j++){
+					
+					var count = 1
+					if(item.count)
+						count = 1/item.count
+					
 					if(requieredItems.indexOf(item.crafting[j])==-1){
-						requieredCount[requieredItems.length] = 1
+						requieredCount[requieredItems.length] = count
 						requieredItems[requieredItems.length] = item.crafting[j]
 						console.log("-1")
 					}else{
-						requieredCount[requieredItems.indexOf(item.crafting[j])]++
+						requieredCount[requieredItems.indexOf(item.crafting[j])] += count
 					}
 				}
+			}
+			for(var i=0;i<requieredCount.length;i++){
+				requieredCount[i]=Math.ceil(requieredCount[i])
 			}
 		}
 		updateoutput()
