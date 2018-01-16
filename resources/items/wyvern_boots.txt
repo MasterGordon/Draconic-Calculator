@@ -2,5 +2,5 @@
 	
 "type":"armor",
 "name": "Wyvern Boots",
-	"crafting": ["Diamond_boots", "Draconium Ingot", "Draconium Ingot", "Draconium Ingot", "Draconium Ingot", "Draconium Ingot", "Draconium Ingot", "wyvern_core", "wyvern_energy_core"]
+	"crafting": ["diamond_boots", "Draconium Ingot", "Draconium Ingot", "Draconium Ingot", "Draconium Ingot", "Draconium Ingot", "Draconium Ingot", "wyvern_core", "wyvern_energy_core"]
 }
