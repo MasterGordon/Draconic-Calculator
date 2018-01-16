@@ -1,4 +1,6 @@
 {
-	"name": "Draconium Block",
+	
+"type":"blocks",
+"name": "Draconium Block",
 	"crafting": ["Draconium Ingot", "Draconium Ingot", "Draconium Ingot", "Draconium Ingot", "Draconium Ingot", "Draconium Ingot", "Draconium Ingot", "Draconium Ingot", "Draconium Ingot" ]
 }

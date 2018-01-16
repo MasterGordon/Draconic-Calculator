@@ -1,5 +1,7 @@
 {
-	"name": "Block of Iron",
+	
+"type":"other",
+"name": "Block of Iron",
 	"disabled": true,
 	"crafting": ["Iron Ingot", "Iron Ingot", "Iron Ingot", "Iron Ingot", "Iron Ingot", "Iron Ingot", "Iron Ingot", "Iron Ingot", "Iron Ingot"]
 }

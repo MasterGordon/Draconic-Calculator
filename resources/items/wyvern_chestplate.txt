@@ -1,4 +1,6 @@
 {
-	"name": "Wyvern Chestplate",
+	
+"type":"armor",
+"name": "Wyvern Chestplate",
 	"crafting": ["Diamond_chestplate", "Draconium Ingot", "Draconium Ingot", "Draconium Ingot", "Draconium Ingot", "Draconium Ingot", "Draconium Ingot", "wyvern_core", "wyvern_energy_core"]
 }

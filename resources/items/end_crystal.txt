@@ -1,4 +1,7 @@
 {
-	"name": "End Crystal",
+	
+"type":"other",
+"disabled":true,
+"name": "End Crystal",
 	"crafting": ["Ghast Tear", "nether_star", "glass_pane", "glass_pane", "glass_pane", "glass_pane", "glass_pane", "glass_pane", "glass_pane" ]
 }

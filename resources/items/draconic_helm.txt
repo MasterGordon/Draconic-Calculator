@@ -1,4 +1,6 @@
 {
-	"name": "Wyvern Helm",
+	
+"type":"armor",
+"name": "Draconic Helm",
 	"crafting": ["wyvern_helm", "awakened_draconium_ingot", "awakened_draconium_ingot", "awakened_core", "draconic_energy_core"]
 }

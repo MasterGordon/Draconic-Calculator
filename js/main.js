@@ -6,31 +6,56 @@ var allItems = {}
 var requieredCount = []
 var requieredItems = []
 var newid = 0
-
+var items = ""
 
 var itemsRequest = new XMLHttpRequest();
 itemsRequest.open('GET', 'resources/items.txt')
 itemsRequest.onload = function() {
 	var res = itemsRequest.responseText;
-	var items = res.split("\n")
+	items = res.split("\n")
 	var loaded = 0
 	for (var i = 0; i < items.length && !(items[i] in window); i++) {
 		loadJSON(items[i])
 	}
+	
 }
 itemsRequest.send()
 
 
-
 function loadHTML() {
-	$("#itemtoadd").empty()
+	$("#menu li ul").empty()
+	$("#k_other").empty()
 	for (var i = 0; i < allItemsArray.length; i++) {
 		if (!('disabled' in allItemsArray[i])){
-			$("#itemtoadd").append("<option value=\""+allItemsArray[i].id+"\">" + allItemsArray[i].name + "</option>")
+			//$("#itemtoadd").append("<option value=\""+allItemsArray[i].id+"\">" + allItemsArray[i].name + "</option>")
+			$("#k_"+allItemsArray[i].type).append("<li><div class=\"additem\" id=\"add"+ allItemsArray[i].id +"\">" + allItemsArray[i].name + "</div></li>")
 		} else {
 			//console.log(allItemsArray[i].name+" disabled. Not loading")
 		}
 	}
+	
+	$(".additem").click(function() {
+		var id = parseInt($(this).attr("id").substring(3,99))
+		console.log(id)
+		var tagid = 'item_'+id
+		if($('#'+tagid).length){
+			console.log(id+" allready exists!")
+			return
+		}
+		$("#tocraft").append('<input id="'+tagid+'" name="value"><label id="lable_'+tagid+'" style="margin-top: 3px;" class="ui-widget" for="'+tagid+'">  '+getItemFromId(id).name+'<br></label>')
+		$("#"+tagid).spinner({
+			  min: 0,
+			  numberFormat: "n",
+			  change: function( event, ui ) {
+				  if($("#"+tagid).spinner( "value" )==0){
+					  $("#"+tagid).spinner( "destroy" )
+					  $("#"+tagid).remove()
+					  $("#lable_"+tagid).remove()
+				  }
+			  }
+		});
+		$("#"+tagid).val(1)
+	})
 }
 
 function loadJSON(itemname) {
@@ -45,11 +70,13 @@ function loadJSON(itemname) {
 			console.warn("missing key \"name\" in "+itemname)
 		}
 		item.id = newid
-		newid++
 		allItems[itemname] = item
 		allItemsArray.push(item)
 		console.log(item)
 		loadHTML()
+		newid++
+		if(newid==items.length)
+			$( "#menu" ).menu( "refresh" );
 	}
 	itemRequest.send()
 }
@@ -70,7 +97,7 @@ $( document ).ready(function() {
 	$("#calc").button()
 	
 	// BUTTONS
-	$("#additem").click(function() {
+	$(".additem").click(function() {
 		var id = $("#itemtoadd").val()
 		console.log("Adding "+id+"...")
 		var tagid = 'item_'+id
@@ -144,7 +171,6 @@ function updateoutput() {
 						console.log("-1")
 					}else{
 						requieredCount[requieredItems.indexOf(item.crafting[j])]++
-						console.log("is Da")
 					}
 				}
 			}

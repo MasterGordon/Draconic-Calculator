@@ -2,3 +2,17 @@
 	width: 80px;
 	margin-top: 3px;
 }
+
+#menu {
+	width: 250px;
+}
+
+#menubox{
+	height: 100%;
+	top: 0px;
+	left: 320px;
+	position: fixed;
+    border-left-width: 2px;
+    border-color: black;
+    border-left-style: solid;
+}

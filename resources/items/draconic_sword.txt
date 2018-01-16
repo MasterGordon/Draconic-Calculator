@@ -1,4 +1,6 @@
 {
-	"name": "Draconic Sword",
+	
+"type":"tools",
+"name": "Draconic Sword",
 	"crafting": ["sword_of_the_wyvern", "awakened_draconium_ingot", "awakened_draconium_ingot", "awakened_core", "draconic_energy_core"]
 }

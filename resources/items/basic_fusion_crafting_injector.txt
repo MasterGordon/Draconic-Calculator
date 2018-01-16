@@ -1,4 +1,6 @@
 {
-	"name": "Basic Fusion Crafting Injector",
+	
+"type":"blocks",
+"name": "Basic Fusion Crafting Injector",
 	"crafting": ["Diamond", "Diamond", "Stone", "Stone", "Stone", "Stone", "Stone", "block_of_iron", "draconic_core"]
 }

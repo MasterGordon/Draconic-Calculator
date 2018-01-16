@@ -1,5 +1,7 @@
 {
-	"name": "Diamond Hoe",
+	
+"type":"other",
+"name": "Diamond Hoe",
 	"disabled": true,
 	"crafting": ["Diamond", "Diamond", "Stick", "Stick"]
 }

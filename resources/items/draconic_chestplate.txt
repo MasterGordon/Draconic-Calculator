@@ -1,4 +1,6 @@
 {
-	"name": "Wyvern Chestplate",
+	
+"type":"armor",
+"name": "Draconic Chestplate",
 	"crafting": ["wyvern_chestplate", "awakened_draconium_ingot", "awakened_draconium_ingot", "awakened_core", "draconic_energy_core"]
 }

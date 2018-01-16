@@ -1,4 +1,6 @@
 {
-	"name": "Wyvern Flux Capacitor",
+	
+"type":"other",
+"name": "Wyvern Flux Capacitor",
 	"crafting": ["Draconium Ingot", "Draconium Ingot", "Draconium Ingot", "Draconium Ingot", "wyvern_energy_core", "wyvern_energy_core", "wyvern_energy_core", "wyvern_energy_core", "wyvern_core"]
 }

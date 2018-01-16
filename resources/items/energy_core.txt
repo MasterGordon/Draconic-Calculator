@@ -1,4 +1,6 @@
 {
-	"name": "Energy Core",
+	
+"type":"blocks",
+"name": "Energy Core",
 	"crafting": ["Draconium Ingot", "Draconium Ingot", "Draconium Ingot", "Draconium Ingot", "Draconium Ingot", "Draconium Ingot", "wyvern_core", "wyvern_energy_core", "wyvern_energy_core"]
 }

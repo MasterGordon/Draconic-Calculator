@@ -1,5 +1,7 @@
 {
-	"name": "Diamond Boots",
+	
+"type":"other",
+"name": "Diamond Boots",
 	"disabled": true,
 "crafting":[
 "Diamond",

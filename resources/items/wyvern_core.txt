@@ -1,4 +1,6 @@
 {
-	"name": "Wyvern Core",
+	
+"type":"other",
+"name": "Wyvern Core",
 	"crafting": ["Draconium Ingot", "draconic_core", "Draconium Ingot", "draconic_core", "nether_star", "draconic_core", "Draconium Ingot", "draconic_core", "Draconium Ingot"]
 }

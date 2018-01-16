@@ -1,4 +1,6 @@
 {
-	"name": "Draconic Flux Capacitor",
+	
+"type":"other",
+"name": "Draconic Flux Capacitor",
 	"crafting": ["awakened_draconium_ingot", "awakened_draconium_ingot", "awakened_draconium_ingot", "awakened_draconium_ingot", "draconic_energy_core", "draconic_energy_core", "draconic_energy_core", "draconic_energy_core", "wyvern_flux_capacitor"]
 }

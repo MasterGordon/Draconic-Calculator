@@ -12,13 +12,51 @@
 	<script src="js/main.js"></script>
 	<select id="itemtoadd">
 	</select>
-	<button id="additem">Add</button>
-	<div id="tocraft"></div>
-	<span style="display: inline-block; width: 90%;"></span>
-	<br>
-	<button id="calc">Calculate</button>
-	<span style="display: inline-block; width: 90%;"></span>
-	<br>
-	<div class="ui-widget" id="output"></div>
+	<div id="menubox">
+		<ul id="menu">
+			<li>
+				<div>Blocks</div>
+				<ul id="k_blocks">
+				</ul>
+			</li>
+			<li>
+				<div>Tools</div>
+				<ul id="k_tools">
+				</ul>
+			</li>
+			<li>
+				<div>Armor</div>
+				<ul id="k_armor">
+				</ul>
+			</li>
+			<li>
+				<div>Energy Cores</div>
+				<ul id="k_cores">
+				</ul>
+			</li>
+			<li>
+				<div>Upgrades</div>
+				<ul id="k_upgrades">
+				</ul>
+			</li>
+			<li>
+				<div>Other</div>
+				<ul id="k_other">
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<script type="text/javascript">
+	$("#menu").menu();
+		$("ul").css("width", "250px")
+	</script>
+	<div id="crafting">
+		<button id="additem">Add</button>
+		<div id="tocraft"></div>
+		<span style="display: inline-block; width: 90%;"></span> <br>
+		<button id="calc">Calculate</button>
+		<span style="display: inline-block; width: 90%;"></span> <br>
+		<div class="ui-widget" id="output"></div>
+	</div>
 </body>
 </html>

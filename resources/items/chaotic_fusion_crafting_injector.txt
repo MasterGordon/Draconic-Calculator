@@ -1,4 +1,6 @@
 {
-	"name": "Chaotic Fusion Crafting Table",
-	"crafting": ["Diamond", "Diamond", "Diamond", "Diamond", "chaotic_core", "draconic_fusion_crafting_injector", "dragon_egg"]
+	
+"type":"blocks",
+"name": "Chaotic Fusion Crafting Injector",
+	"crafting": ["Diamond", "Diamond", "Diamond", "Diamond", "chaotic_core", "draconic_fusion_crafting_injector", "Dragon Egg"]
 }

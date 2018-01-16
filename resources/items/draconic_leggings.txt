@@ -1,4 +1,6 @@
 {
-	"name": "Draconic Leggings",
+	
+"type":"armor",
+"name": "Draconic Leggings",
 	"crafting": ["wyvern_leggings", "awakened_draconium_ingot", "awakened_draconium_ingot", "awakened_core", "draconic_energy_core"]
 }
