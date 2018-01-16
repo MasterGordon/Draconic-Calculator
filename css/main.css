@@ -16,3 +16,11 @@
     border-color: black;
     border-left-style: solid;
 }
+
+.splitable {
+	font-weight: 700;
+}
+
+.notsplitable {
+	
+}

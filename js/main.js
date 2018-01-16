@@ -148,9 +148,9 @@ function updateoutput() {
 	$("#output").empty()
 	for (var i = 0; i < requieredItems.length; i++) {
 		if(allItems[requieredItems[i]]){
-			$("#output").append("<span id=\""+i+"\" class=\"ui-widget outputitem\">" +requieredCount[i]+"x "+allItems[requieredItems[i]].name+ "</span><br>")
+			$("#output").append("<span id=\""+i+"\" class=\"ui-widget outputitem splitable\">" +requieredCount[i]+"x "+allItems[requieredItems[i]].name+ "</span><br>")
 		}else{
-			$("#output").append("<span id=\""+i+"\" class=\"ui-widget outputitem\">" +requieredCount[i]+"x "+requieredItems[i]+ "</span><br>")
+			$("#output").append("<span id=\""+i+"\" class=\"ui-widget outputitem notsplitable\">" +requieredCount[i]+"x "+requieredItems[i]+ "</span><br>")
 		}
 	}
 	
