@@ -57,3 +57,11 @@ wyvern_flux_capacitor
 wyvern_fusion_crafting_injector
 wyvern_helm
 wyvern_leggings
+../energy_cores/tier_1
+../energy_cores/tier_2
+../energy_cores/tier_3
+../energy_cores/tier_4
+../energy_cores/tier_5
+../energy_cores/tier_6
+../energy_cores/tier_7
+../energy_cores/tier_8

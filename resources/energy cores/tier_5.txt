@@ -1,4 +1,0 @@
-{
-	"name": "Energy Core Tier 5",
-	"crafting": ["energy_core", "energy_core_stabilizer" (36), "block_of_redstone" (80), "draconium_block" (90)]
-}
