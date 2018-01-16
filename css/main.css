@@ -7,14 +7,14 @@
 	width: 250px;
 }
 
-#menubox{
+#menubox {
 	height: 100%;
-	top: 0px;
-	left: 320px;
+	top: 0px; left : 320px;
 	position: fixed;
-    border-left-width: 2px;
-    border-color: black;
-    border-left-style: solid;
+	border-left-width: 2px;
+	border-color: black;
+	border-left-style: solid;
+	left: 320px;
 }
 
 .splitable {
@@ -23,4 +23,16 @@
 
 .notsplitable {
 	
+}
+
+#bottom-right {
+	right: 0;
+	bottom: 0;
+	position: absolute;
+}
+
+#bottom-left {
+	left: 0;
+	bottom: 0;
+	position: absolute;
 }
