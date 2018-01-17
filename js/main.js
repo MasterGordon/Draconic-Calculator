@@ -37,6 +37,12 @@ function loadHTML() {
 		}
 	}
 
+	$("#menu li ul").each(function() {
+		$(this).html($(this).children('li').sort(function(a, b) {
+			return ($(b).data('position')) < ($(a).data('position')) ? 1 : -1;
+		}));
+	});
+
 	$(".additem")
 			.click(
 					function() {
@@ -46,6 +52,10 @@ function loadHTML() {
 						if ($('#' + tagid).length) {
 							console.log(id + " allready exists!")
 							return
+
+							
+
+														
 
 							
 
@@ -73,11 +83,6 @@ function loadHTML() {
 						});
 						$("#" + tagid).val(1)
 					})
-					$("#menu li ul").each(function(){
-					    $(this).html($(this).children('li').sort(function(a, b){
-					        return ($(b).data('position')) < ($(a).data('position')) ? 1 : -1;
-					    }));
-					});
 }
 
 function loadJSON(itemname) {
@@ -131,6 +136,10 @@ $(document)
 											console.log(id
 													+ " allready exists!")
 											return
+
+											
+
+																						
 
 											
 
