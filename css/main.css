@@ -9,7 +9,8 @@
 
 #menubox {
 	height: 100%;
-	top: 0px; left : 320px;
+	top: 0px; 
+	left : 320px;
 	position: fixed;
 	border-left-width: 2px;
 	border-color: black;
