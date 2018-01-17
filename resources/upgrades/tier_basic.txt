@@ -1,5 +1,5 @@
 {
 	"type": "upgrades",
 	"name": "Upgrade Tier Basic",
-	"crafting": ["diamond", "diamond", "draconic_core", "golden_apple", "golden_apple", "eye_of_ender", "eye_of_ender"]
+	"crafting": ["Diamond", "Diamond", "draconic_core", "golden_apple", "golden_apple", "eye_of_ender", "eye_of_ender"]
 }

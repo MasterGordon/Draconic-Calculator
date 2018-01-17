@@ -2,5 +2,5 @@
 	
 "type":"tools",
 "name": "Axe of the Wyvern",
-	"crafting": ["Diamond_axe", "Draconium Ingot", "Draconium Ingot", "wyvern_core", "wyvern_energy_core"]
+	"crafting": ["diamond_axe", "Draconium Ingot", "Draconium Ingot", "wyvern_core", "wyvern_energy_core"]
 }

@@ -3,5 +3,5 @@
 "type":"other",
 "name": "Eye of Ender",
 	"disabled": true,
-	"crafting": ["ender_pearl", "blaze_powder"]
+	"crafting": ["Ender Pearl", "blaze_powder"]
 }

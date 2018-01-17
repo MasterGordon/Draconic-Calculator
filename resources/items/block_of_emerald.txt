@@ -3,5 +3,5 @@
 "type":"other",
 "name": "Block of Emerald",
 	"disabled": true,
-	"crafting": ["emerald", "emerald", "emerald", "emerald", "emerald", "emerald", "emerald", "emerald", "emerald"]
+	"crafting": ["Emerald", "Emerald", "Emerald", "Emerald", "Emerald", "Emerald", "Emerald", "Emerald", "Emerald"]
 }
