@@ -5,6 +5,8 @@ var allItemsArray = []
 var allItems = {}
 var requieredCount = []
 var requieredItems = []
+var frequieredCount = []
+var frequieredItems = []
 var newid = 0
 var items = ""
 
@@ -52,12 +54,6 @@ function loadHTML() {
 						if ($('#' + tagid).length) {
 							console.log(id + " allready exists!")
 							return
-
-							
-
-														
-
-							
 
 						}
 						$("#tocraft")
@@ -137,12 +133,6 @@ $(document)
 													+ " allready exists!")
 											return
 
-											
-
-																						
-
-											
-
 										}
 										$("#tocraft")
 												.append(
@@ -191,18 +181,18 @@ $(document)
 									function() {
 										requieredCount = []
 										requieredItems = []
-										var requieredCountMulti = []
 										for (var i = 0; i < newid; i++) {
 											var tag = "#item_" + i;
 											if ($(tag).length) {
 												var item = allItemsArray[i]
+												var count = 1
+												if (item.count)
+													var count = item.count
 												for (var n = 0; n < Math
-												.ceil($(tag)
-														.spinner("value")/item.count); n++) {
+														.ceil($(tag).spinner(
+																"value")
+																/ count); n++) {
 													for (var j = 0; j < item.crafting.length; j++) {
-														
-														
-
 														if (requieredItems
 																.indexOf(item.crafting[j]) == -1) {
 															requieredCount[requieredItems.length] = 1
@@ -214,18 +204,55 @@ $(document)
 														}
 													}
 												}
-												
+
 											}
 										}
+										makeCrafting()
 										updateoutput()
 									})
 
 				})
 
+function makeCrafting() {
+	frequieredCount = requieredCount.slice()
+	frequieredItems = requieredItems.slice()
+	var swapped = false
+	do {
+		swapped = false
+		var k = 0;
+		while (k < frequieredItems.length) {
+			var itemid = frequieredItems[k]
+			if (allItems[itemid]) {
+				swapped = true
+				console.log("SWAPPED")
+				var item = allItems[itemid]
+				var count = 1
+				var itemcount = frequieredCount[k]
+				if (item.count)
+					var count = item.count
+				frequieredCount.splice(k, 1)
+				frequieredItems.splice(k, 1)
+				for (var i = 0; i < Math.ceil(itemcount / count); i++) {
+					for (var j = 0; j < item.crafting.length; j++) {
+						if (frequieredItems.indexOf(item.crafting[j]) == -1) {
+							frequieredCount[frequieredItems.length] = 1
+							frequieredItems[frequieredItems.length] = item.crafting[j]
+						} else {
+							frequieredCount[frequieredItems
+									.indexOf(item.crafting[j])] += 1
+						}
+					}
+				}
+			}
+			k++
+		}
+	} while (swapped)
+	console.log(frequieredItems)
+}
 function updateoutput() {
 	$("#output").empty()
 	$("#outputfull").empty()
-	$("#outputfull").append('<h1 class="ui-widget">=</h1><br>')
+	$("#outputfull").append('<h1 class="ui-widget">=</h1>')
 	for (var i = 0; i < requieredItems.length; i++) {
 		if (allItems[requieredItems[i]]) {
 			$("#output").append(
@@ -241,6 +268,22 @@ function updateoutput() {
 							+ "</span><br>")
 		}
 	}
+	
+	for (var i = 0; i < frequieredItems.length; i++) {
+		if (allItems[frequieredItems[i]]) {
+			$("#outputfull").append(
+					"<span id=\"" + i
+							+ "\" class=\"ui-widget outputitem splitable\">"
+							+ frequieredCount[i] + "x "
+							+ allItems[requieredItems[i]].name + "</span><br>")
+		} else {
+			$("#outputfull").append(
+					"<span id=\"" + i
+							+ "\" class=\"ui-widget outputitem notsplitable\">"
+							+ frequieredCount[i] + "x " + frequieredItems[i]
+							+ "</span><br>")
+		}
+	}
 
 	$(".outputitem")
 			.click(
@@ -251,29 +294,24 @@ function updateoutput() {
 						var itemcount = requieredCount[index]
 						if (allItems[itemid]) {
 							var item = allItems[itemid]
+							var count = 1
+							if (item.count)
+								var count = item.count
 							requieredCount.splice(index, 1)
 							requieredItems.splice(index, 1)
-							for (var i = 0; i < itemcount; i++) {
+							for (var i = 0; i < Math.ceil(itemcount / count); i++) {
 								for (var j = 0; j < item.crafting.length; j++) {
-
-									var count = 1
-									if (item.count)
-										count = 1 / item.count
 
 									if (requieredItems
 											.indexOf(item.crafting[j]) == -1) {
-										requieredCount[requieredItems.length] = count
+										requieredCount[requieredItems.length] = 1
 										requieredItems[requieredItems.length] = item.crafting[j]
 										console.log("-1")
 									} else {
 										requieredCount[requieredItems
-												.indexOf(item.crafting[j])] += count
+												.indexOf(item.crafting[j])] += 1
 									}
 								}
-							}
-							for (var i = 0; i < requieredCount.length; i++) {
-								requieredCount[i] = Math
-										.ceil(requieredCount[i])
 							}
 							$('#' + index).fadeOut(300)
 							setTimeout(function() {
