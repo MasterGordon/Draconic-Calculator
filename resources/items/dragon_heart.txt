@@ -2,5 +2,6 @@
 	
 "type":"other",
 "name": "Dragon Heart",
+	"index": 0,
 	"crafting": ["end_crystal","end_crystal","end_crystal","end_crystal"]
 }

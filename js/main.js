@@ -31,8 +31,10 @@ function loadHTML() {
 			// $("#itemtoadd").append("<option
 			// value=\""+allItemsArray[i].id+"\">" + allItemsArray[i].name +
 			// "</option>")
+			if(typeof(allItemsArray[i].index) == 'undefined')
+				console.error(allItemsArray[i])
 			$("#k_" + allItemsArray[i].type).append(
-					"<li><div class=\"additem\" id=\"add" + allItemsArray[i].id
+					"<li data-position=\""+allItemsArray[i].index+"\"><div class=\"additem\" id=\"add" + allItemsArray[i].id
 							+ "\">" + allItemsArray[i].name + "</div></li>")
 		} else {
 			// console.log(allItemsArray[i].name+" disabled. Not loading")
@@ -98,8 +100,10 @@ function loadJSON(itemname) {
 		console.log(item)
 		loadHTML()
 		newid++
-		if (newid == items.length)
+		if (newid == items.length){
 			$("#menu").menu("refresh");
+			
+		}
 	}
 	itemRequest.send()
 }
@@ -249,6 +253,7 @@ function makeCrafting() {
 	} while (swapped)
 	console.log(frequieredItems)
 }
+
 function updateoutput() {
 	$("#output").empty()
 	$("#outputfull").empty()
