@@ -191,22 +191,37 @@ $(document)
 									function() {
 										requieredCount = []
 										requieredItems = []
+										var requieredCountMulti = []
 										for (var i = 0; i < newid; i++) {
 											var tag = "#item_" + i;
 											if ($(tag).length) {
 												var item = allItemsArray[i]
-												for (var n = 0; n < $(tag)
-														.spinner("value"); n++) {
+												for (var n = 0; n < Math
+												.ceil($(tag)
+														.spinner("value")/item.count); n++) {
 													for (var j = 0; j < item.crafting.length; j++) {
+														
+														var count = 1
+//														if (item.count){
+//															count = 1 / (item.count)
+//															requieredCountMulti[requieredItems.length] = item.count
+//														}
+
 														if (requieredItems
 																.indexOf(item.crafting[j]) == -1) {
-															requieredCount[requieredItems.length] = 1
+															requieredCount[requieredItems.length] = count
 															requieredItems[requieredItems.length] = item.crafting[j]
+															console.log("-1")
 														} else {
 															requieredCount[requieredItems
-																	.indexOf(item.crafting[j])]++
+																	.indexOf(item.crafting[j])] += count
 														}
 													}
+												}
+												for (var o = 0; o < requieredCount.length; o++) {
+													requieredCount[o] = Math
+															.ceil(requieredCount[o])
+													requieredCount[o] = requieredCount[o]
 												}
 											}
 										}
@@ -217,6 +232,8 @@ $(document)
 
 function updateoutput() {
 	$("#output").empty()
+	$("#outputfull").empty()
+	$("#outputfull").append('<h1 class="ui-widget">=</h1><br>')
 	for (var i = 0; i < requieredItems.length; i++) {
 		if (allItems[requieredItems[i]]) {
 			$("#output").append(
