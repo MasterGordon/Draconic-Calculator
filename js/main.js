@@ -273,13 +273,13 @@ function updateoutput() {
 		if (allItems[frequieredItems[i]]) {
 			$("#outputfull").append(
 					"<span id=\"" + i
-							+ "\" class=\"ui-widget outputitem splitable\">"
+							+ "\" class=\"ui-widget notsplitable\">"
 							+ frequieredCount[i] + "x "
 							+ allItems[requieredItems[i]].name + "</span><br>")
 		} else {
 			$("#outputfull").append(
 					"<span id=\"" + i
-							+ "\" class=\"ui-widget outputitem notsplitable\">"
+							+ "\" class=\"ui-widget notsplitable\">"
 							+ frequieredCount[i] + "x " + frequieredItems[i]
 							+ "</span><br>")
 		}
