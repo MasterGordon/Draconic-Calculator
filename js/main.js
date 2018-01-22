@@ -201,28 +201,20 @@ $(document)
 														.spinner("value")/item.count); n++) {
 													for (var j = 0; j < item.crafting.length; j++) {
 														
-														var count = 1
-//														if (item.count){
-//															count = 1 / (item.count)
-//															requieredCountMulti[requieredItems.length] = item.count
-//														}
+														
 
 														if (requieredItems
 																.indexOf(item.crafting[j]) == -1) {
-															requieredCount[requieredItems.length] = count
+															requieredCount[requieredItems.length] = 1
 															requieredItems[requieredItems.length] = item.crafting[j]
 															console.log("-1")
 														} else {
 															requieredCount[requieredItems
-																	.indexOf(item.crafting[j])] += count
+																	.indexOf(item.crafting[j])] += 1
 														}
 													}
 												}
-												for (var o = 0; o < requieredCount.length; o++) {
-													requieredCount[o] = Math
-															.ceil(requieredCount[o])
-													requieredCount[o] = requieredCount[o]
-												}
+												
 											}
 										}
 										updateoutput()
